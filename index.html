@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title">Civil Nuclear Power Survey</h1>
+    <p id="description">We are taking this short survey to obtain public opinion on civil nuclear power</p>
+    <form id="survey-form"  method="POST">
+        <div class="section">
+            <label class="label" id="name-label" for="name">Enter Your Name:</label>
+            <input class="input input_char" type="text" name="" id="name" placeholder="Please enter your name here" required>
+        </div>
+        <div class="section">
+            <label class="label" id="email-label" for="email">Enter you Email:</label>
+            <input class="input input_char" type="email" name="" id="email" placeholder="Please enter your email here" required>
+        </div>
+        <div class="section">
+            <label class="label" id="number-label" for="number">Enter your Age:</label>
+            <input class="input input_char" type="number" name="" id="number" min="16" max="130" step="1" placeholder="Please enter your age here">
+        </div>
+        <div class="section">
+            <label class="label" for="dropdown">What is your level of knowledge on Nuclear Power?</label>
+            <select class="input input_select" name="" id="dropdown">
+                <option value="">None</option>
+                <option value="">Enthusiast</option>
+                <option value="">Expert</option>
+                <option value="">Professional</option>
+            </select>
+        </div>
+        <div class="section">
+            <label class="label" for="">Do you think that Nuclear power is better for the future?</label>
+            <input class="input input_radio" type="radio" name="yes-no" value="yes" id="yes">
+            <label for="yes">Yes</label>
+            <input class="input input_radio" type="radio" name="yes-no" value="no" id="no">
+            <label for="no">No</label>
+        </div>
+        <div class="section">
+            <label class="label" for="best-power">What do you think are better sources of power?</label>
+            <input class="input input_checkbox" type="checkbox" name="coal" id="coal" value="coal">
+            <label for="coal">Coal</label><br>
+            <input class="input input_checkbox" type="checkbox" name="hydro" id="hydro" value="hydro">
+            <label for="hydro">Hydro</label><br>
+            <input class="input input_checkbox" type="checkbox" name="wind" id="wind" value="hydro">
+            <label for="wind">Wind</label><br>
+            <input class="input input_checkbox" type="checkbox" name="solar" id="solar" value="solar">
+            <label for="solar">Solar</label><br>
+            <input class="input input_checkbox" type="checkbox" name="nuclear" id="nuclear" value="nuclear">
+            <label for="nuclear">Nuclear</label><br>
+            <input class="input input_checkbox" type="checkbox" name="geo" id="geo" value="geo">
+            <label for="geo">GeoThermal</label>
+        </div>
+        <div class="section">
+            <label class="label" for="comments">Please add any comments if you have:</label>
+            <textarea class="input input_textarea" name="" id="comments" cols="30" rows="10"></textarea>
+        </div>
+        <div class="section">
+            <button id="submit" type="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+</html>
