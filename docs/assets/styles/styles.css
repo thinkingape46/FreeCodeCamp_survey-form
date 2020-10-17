@@ -1,0 +1,144 @@
+body {
+    font-family: roboto, sans-serif;
+    background-color: #252b2a;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 200;
+    margin: 0;
+}
+
+#title, #description {
+    text-align: center;
+    max-width: 80vw;
+    margin: auto;
+}
+
+#title {    
+    font-size: 1.2rem;
+    margin-top: 24px;
+}
+
+#description {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+#survey-form {
+    max-width: 85vw;
+    color: #dbfbff;
+    margin: 5px auto;
+    padding: 15px 15px;
+    background-color: #252b2a;
+}
+
+.section, .label {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    padding-bottom: 8px;
+}
+
+.input_char, .input_select {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.section {
+    display: block;
+}
+
+.input_char, .input_select {
+    border: 1px solid #a0bdb8;
+    padding: 1px 2px;
+    height: 30px;
+}
+
+.input_select {
+    width: 50%;
+}
+
+.input_checkbox {
+    margin-bottom: 5px;
+}
+
+.input_textarea {
+    width: 100%;
+}
+
+.input:focus {
+    border: 2px solid #006673;
+    outline: 1px solid #006673;
+}
+
+#submit {
+    background-color: #006673;
+    border: 1px solid #3c4e4b;
+    border-radius: 3%;
+    outline: none;
+    width: 50%;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    color: #dbfbff;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 1.1rem;
+    }
+    #title {
+        margin-top: 40px;
+    }
+    #description {
+        font-size: 1.3rem;
+        margin-top: 5px;
+    }
+    .section, .label {
+        padding-bottom: 8px;
+    }
+    .input_char, .input_select {
+        padding: 1px 8px;
+        height: 45px;
+        font-size: 1rem;
+    }
+    .input_checkbox {
+        margin-bottom: 8px;
+    }
+    #submit {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+    #title, #description {
+        max-width: 60vw;
+    }
+    #title {    
+        font-size: 1.7rem;
+    }
+    #survey-form {
+        width: 60vw;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        background-color: #006673;
+    }
+    #title, #description {
+        max-width: 50vw;
+    }
+    #title {    
+        font-size: 1.8rem;
+        padding-bottom: 20px;
+    }
+    #survey-form {
+        margin-top: 50px;
+        width: 40vw;
+        padding: 40px 60px;
+    }
+    .section {
+        padding-bottom: 20px;
+    }
+}
