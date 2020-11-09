@@ -1,6 +1,6 @@
 body {
     font-family: roboto, sans-serif;
-    background-color: #252b2a;
+    background: linear-gradient(45deg, #0098ab, #013b42);
     color: #fff;
     font-size: 0.9rem;
     font-weight: 200;
@@ -72,10 +72,11 @@ body {
 }
 
 #submit {
-    background-color: #006673;
-    border: 1px solid #3c4e4b;
+    cursor: pointer;
+    background-color: #007180;
     border-radius: 3%;
     outline: none;
+    border: none;
     width: 50%;
     height: 40px;
     display: block;
